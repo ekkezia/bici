@@ -211,7 +211,7 @@ function WebglCard(ctx) {
       return cg;
    }
 
-   cg.drawGLB = model => {
+   cg.drawGLB = (model, color) => {
       let url = typeof model == 'string' ? model : model?.url;
       if (url) {
          if (! glbModels.has(url))
@@ -244,8 +244,8 @@ function WebglCard(ctx) {
          let m = mxm(projection, mxm(root, primitive.matrix));
          setUniform('Matrix4fv', 'uMF', false, m);
          setUniform('Matrix4fv', 'uMI', false, inverse(m));
-         setUniform('3fv', 'uColor', primitive.color);
-         setUniform('1i', 'uTexture', primitive.texture);
+         setUniform('3fv', 'uColor', color ?? primitive.color);
+         setUniform('1i', 'uTexture', color ? -1 : primitive.texture);
 
          let attribute = (name, size, buffer) => {
             let location = context.getAttribLocation(context.program, name);
