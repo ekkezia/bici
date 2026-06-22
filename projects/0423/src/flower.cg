@@ -1,0 +1,145 @@
+cg.move(.4,-1,0)
+
+  //.draw(tubeY,[1,1,1],[.2,.1,.2])
+  .push()
+  .scale(0.5)
+  .drawGLB('assets/vase.glb')
+  .pop()
+
+  .move(0,.24,0)
+  .turnY(@0)
+
+  // root joint
+  //.draw(tube,[0,.5,1],.04)
+
+  .push()
+
+    // JOINT 1
+    .push()
+    .move(0,.05,0)
+    .draw(tubeY,[.1,.55,.18],[.02,.1,.02])
+    .pop()
+
+    .move(0,.05,0)
+    .draw(tube,[0,.8,0],.012)
+
+    .move(0,.10,0)
+    .turnZ(@1 * .03)
+
+    // JOINT 2
+    .push()
+    .move(0,.05,0)
+    .draw(tubeY,[.1,.55,.18],[.02,.1,.02])
+    .pop()
+
+    .move(0,.05,0)
+    .draw(tube,[0,.8,0],.012)
+
+    .move(0,.10,0)
+    .turnZ(@1 * .06)
+
+    // JOINT 3
+    .push()
+    .move(0,.05,0)
+    .draw(tubeY,[.1,.55,.18],[.02,.1,.02])
+    .pop()
+
+    .move(0,.05,0)
+    .draw(tube,[0,.8,0],.012)
+
+    .move(0,.10,0)
+    .turnZ(@1 * .10)
+
+    // JOINT 4
+    .push()
+    .move(0,.05,0)
+    .draw(tubeY,[.1,.55,.18],[.02,.1,.02])
+    .pop()
+
+    .move(0,.05,0)
+    .draw(tube,[0,.8,0],.011)
+
+    .move(0,.10,0)
+    .turnZ(@1 * .15)
+
+    // JOINT 5
+    .push()
+    .move(0,.05,0)
+    .draw(tubeY,[.1,.55,.18],[.02,.1,.02])
+    .pop()
+
+    .move(0,.05,0)
+    .draw(tube,[0,.8,0],.011)
+
+    .move(0,.10,0)
+    .turnZ(@1 * .22)
+
+    // JOINT 6
+    .push()
+    .move(0,.05,0)
+    .draw(tubeY,[.1,.55,.18],[.02,.1,.02])
+    .pop()
+
+    .move(0,.05,0)
+    .draw(tube,[0,.8,0],.010)
+
+    .move(0,.10,0)
+    .turnZ(@1 * .30)
+
+    // JOINT 7
+    .push()
+    .move(0,.05,0)
+    .draw(tubeY,[.1,.55,.18],[.02,.1,.02])
+    .pop()
+
+    .move(0,.05,0)
+    .draw(tube,[0,.8,0],.010)
+
+    .move(0,.10,0)
+    .turnZ(@1 * .40)
+
+    // JOINT 8
+    .push()
+    .move(0,.05,0)
+    .draw(tubeY,[.1,.55,.18],[.02,.1,.02])
+    .pop()
+
+    .move(0,.05,0)
+    .draw(tube,[0,.8,0],.009)
+
+    .move(0,.10,0)
+    .turnZ(@1 * .52)
+
+    // JOINT 9
+    .push()
+    .move(0,.05,0)
+    .draw(tubeY,[.1,.55,.18],[.02,.1,.02])
+    .pop()
+
+    .move(0,.05,0)
+    .draw(tube,[0,.8,0],.009)
+
+    .move(0,.10,0)
+    .turnZ(@1 * .66)
+
+    // JOINT 10
+    .push()
+    .move(0,.05,0)
+    .draw(tubeY,[.1,.55,.18],[.02,.1,.02])
+    .pop()
+
+    .move(0,.05,0)
+    .draw(tube,[0,.8,0],.008)
+
+    .move(0,.10,0)
+    .turnZ(@1 * .82)
+
+    // flower
+    .push()
+      .move(0,.015,0)
+      .scale(@2)
+      .drawGLB('assets/rose.glb')
+    .pop()
+
+  .pop()
+;
